@@ -30,7 +30,7 @@ header_labels_ballots = None #variable for storing the column headers of the CSV
 
 with open(csv_path_election, 'r', encoding='UTF-8') as csv_file:  #open the CSV file from the Resources directory
     
-    csv_reader = csv.DictReader(csv_file, delimiter=',') #create a dictionary using DictReader class (of CSV module) with the first row of the CSV file as set as the keys and values in the rows assocaited with the keys
+    csv_reader = csv.DictReader(csv_file, delimiter=',') #create a dictionary using DictReader class (of CSV module) with the first row of the CSV file as set as the keys and values in the rows associated with the keys
     
     header_labels_ballots = csv_reader.fieldnames #stores the first (header) row of the CSV file as a variable - this doesn't seem necessary when using csv.DictReader to read in the CSV file, but this is how you would do it in this script
     
