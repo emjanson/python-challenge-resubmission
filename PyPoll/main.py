@@ -26,6 +26,7 @@ candidate_name = None #variable for use in summing vote totals for each unique c
 number_of_ballots = 0  #variabe for storing the number of total ballots
 top_vote_getter = None #variable for storing candidate name with most votes
 top_vote_getter_counts = 0 #variable for storing the vote counts for the candidate with most votes
+header_labels_ballots = None #variable for storing the column headers of the CSV file
 
 with open(csv_path_election, 'r', encoding='UTF-8') as csv_file:  #open the CSV file from the Resources directory
     

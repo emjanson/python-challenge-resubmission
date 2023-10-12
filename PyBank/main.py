@@ -31,7 +31,7 @@ previous_month_profit_loss = None
 highest_profit_month = None
 highest_loss_month = None
 monthly_differences_list = []
-header_labels_budget = None
+header_labels_budget = None #variable for storing the column headers of the CSV file
 
 with open(csv_path_budget, 'r', encoding='UTF-8') as csv_file:  #open the CSV file from the Resources directory
     
